@@ -1,1 +1,56 @@
-<app-home></app-home>
+<!-- <app-home></app-home> -->
+
+<div class="body">
+  <mat-toolbar color="primary" class="navbar">
+    <span class="title">My Portfolio</span>
+    <span class="spacer"></span>
+    <div class="menu-container">
+      <button mat-button class="mat-button" routerLink="/home">Home</button>
+      <a href="assets/MyResume2024-06.pdf" download="Resume_Akram.pdf">
+        <button mat-button class="mat-button">Download My Resume</button></a
+      >
+    </div>
+    <div class="auth-buttons">
+      <button mat-button class="mat-button">Login</button>
+      <button mat-button class="mat-button">Sign Up</button>
+    </div>
+  </mat-toolbar>
+
+  <div class="split_divs">
+    <div class="left_div">
+      <img class="pofile_image" src="assets/person.jpg" alt="Profile Image" />
+      <br />
+      <mat-divider></mat-divider>
+      <span class="description">Full Stack JS Developer</span>
+      <div class="left_side_vertical_menue">
+        <button mat-button class="mat-button" routerLink="/home">Home</button>
+        <button mat-button class="mat-button" routerLink="/about">
+          About Me
+        </button>
+        <button mat-button class="mat-button" routerLink="/experience">
+          Experience
+        </button>
+        <button
+          mat-button
+          class="mat-button"
+          routerLink="/education-background"
+        >
+          Education Background
+        </button>
+        <button mat-button class="mat-button" routerLink="">Internships</button>
+        <button mat-button class="mat-button" routerLink="">Skills</button>
+        <button mat-button class="mat-button" routerLink="/contact">
+          Contact Me
+        </button>
+      </div>
+    </div>
+    <div class="right_div">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <span>Akram Benaoun </span
+    ><span style="font-weight: bolder"> {{ current_year }}</span>
+  </footer>
+</div>

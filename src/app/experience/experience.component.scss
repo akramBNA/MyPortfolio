@@ -1,0 +1,62 @@
+.experience-section {
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #4a4a4a;
+    // background-color: #fdf6e3; /* Light beige to match the main component */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #b58238; /* Earthy tone that complements beige */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 800px;
+}
+
+.experience-card {
+    background-color: #fff8e1;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e0c9a6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+}
+
+.sub-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+
+.date, .position {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.position {
+    font-weight: bold;
+    margin: 5px 0;
+    color: #b58238;
+}
+
+.description {
+    font-size: 0.95rem;
+    margin-top: 10px;
+    line-height: 1.5;
+}
